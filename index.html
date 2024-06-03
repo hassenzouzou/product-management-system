@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BLUE CRUDS Project</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="crud">
+
+    <div class="head">
+      <h1>CRUDS</h1>
+      <p>PRODUCT MANAGEMENT SYSTEM</p>
+    </div>
+
+    <div class="inputs">
+      <input type="text" placeholder="TITLE" id="title">
+      <div class="price">
+        <input onkeyup="getTotal()" type="number" placeholder="PRICE" id="price">
+        <input onkeyup="getTotal()" type="number" placeholder="TAX" id="tax">
+        <input onkeyup="getTotal()" type="number" placeholder="ADS" id="ads">
+        <input onkeyup="getTotal()" type="number" placeholder="DISCOUNT" id="discount">
+        <small id="total"></small>
+      </div>
+      <input type="number" placeholder="COUNT" id="count">
+      <input type="text" placeholder="CATEGORY" id="category">
+      <button id="submit">Create</button>
+    </div>
+
+    <div class="outputs">
+      <div class="searchBlock">
+        <input onkeyup="searchData(this.value)" type="text" placeholder="SEARCH" id="search">
+        <div class="btnSearch">
+          <button onclick="getSearchMood(this.id)" id="searchTitle">Search By Title</button>
+          <button onclick="getSearchMood(this.id)" id="searchCategory">Search By Category</button>
+        </div>
+
+        <div id="deleteAll"></div>
+
+        <table>
+          <tr>
+            <th>Id</th>
+            <th>Title</th>
+            <th>Price</th>
+            <th>Taxes</th>
+            <th>Ads</th>
+            <th>Discount</th>
+            <th>total</th>
+            <th>Category</th>
+            <th>Update</th>
+            <th>Delete</th>
+          </tr>
+          <tbody id="tbody">
+
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

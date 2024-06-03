@@ -1,0 +1,102 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #3572EF;
+  color: white;
+}
+
+.crud {
+  width: 80%;
+  margin: auto;
+}
+
+.head {
+  text-align: center;
+  margin: 10px 0;
+}
+
+input {
+  width: 100%;
+  height: 35px;
+  background-color: #eee;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  margin: 5px 0;
+  padding: 0px 8px;
+  font-size: 15px;
+}
+
+input:focus {
+  background-color: #B4B4B8;
+  color: white;
+}
+
+.price {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.price input {
+  width: 20%;
+}
+
+#total {
+  background-color: #a00d02;
+  margin-left: 5px;
+  padding: 6px 10px;
+  font-size: 15px;
+  border-radius: 5px;
+}
+
+#total::before {
+  content: 'Total: ';
+}
+
+button {
+  width: 100%;
+  font-size: 17px;
+  padding: 5px 0;
+  align-items: center;
+  border: none;
+  border-radius: 10px;
+  background-color: #0E46A3;
+  color: white;
+  cursor: pointer;
+  transition: .3s;
+}
+
+button:hover {
+  background-color: #082f7f;
+  letter-spacing: 1px;
+}
+
+.btnSearch {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+
+.btnSearch button {
+  width: 45%;
+}
+
+table {
+  width: 100%;
+  text-align: center;
+  margin: 10px 0;
+}
+
+table th {
+  text-transform: uppercase;
+}
+
+th, td {
+  padding: 5px;
+}
